@@ -11,3 +11,18 @@ Print a single value equal to the sum of the elements in the array.
 Constraints
 
 1<=N<=10 0<=a[i]<=10^10
+
+Solution:
+
+#include <stdio.h>
+int main()
+{
+    long long int a[10],n,i,sum=0;
+    scanf("%lld",&n);
+    for(i=0;i<n;i++)
+        scanf("%lld",&a[i]);
+    for(i=0;i<n;i++)
+        sum=sum+a[i];
+    printf("%lld",sum); 
+    return 0;
+}
